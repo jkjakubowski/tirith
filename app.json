@@ -1,57 +1,41 @@
 {
-  "name": "tirith",
-  "displayName": "tirith",
   "expo": {
     "name": "tirith",
     "slug": "tirith",
-    "scheme": "tirith",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "icon": "./assets/images/app-icon-all.png",
-    "updates": {
-      "fallbackToCacheTimeout": 0
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
     },
-    "newArchEnabled": false,
-    "jsEngine": "hermes",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "android": {
-      "icon": "./assets/images/app-icon-android-legacy.png",
-      "package": "com.tirith",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
-        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
       }
     },
-    "ios": {
-      "icon": "./assets/images/app-icon-ios.png",
-      "supportsTablet": true,
-      "bundleIdentifier": "com.tirith"
-    },
     "web": {
-      "favicon": "./assets/images/app-icon-web-favicon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-localization",
-      "expo-font",
+      "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/app-icon-android-adaptive-foreground.png",
-          "imageWidth": 300,
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#191015"
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
     "experiments": {
-      "tsconfigPaths": true
+      "typedRoutes": true
     }
-  },
-  "ignite": {
-    "version": "UNKNOWN"
   }
 }
