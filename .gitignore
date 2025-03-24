@@ -1,13 +1,14 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
-node_modules/
+tirith-front/node_modules/
+tirith-back/node_modules/
 
 # Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+tirith-front/.expo/
+tirith-front/dist/
+tirith-front/web-build/
+tirith-front/expo-env.d.ts
 
 # Native
 *.orig.*
@@ -18,21 +19,26 @@ expo-env.d.ts
 *.mobileprovision
 
 # Metro
-.metro-health-check*
+tirith-front/.metro-health-check*
 
 # debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+tirith-front/npm-debug.*
+tirith-front/yarn-debug.*
+tirith-front/yarn-error.*
 
 # macOS
-.DS_Store
-*.pem
+tirith-front/.DS_Store
+tirith-front/*.pem
 
 # local env files
-.env*.local
+tirith-front/.env*.local
+
+.env
+
+
+tirith-back/.env
 
 # typescript
-*.tsbuildinfo
+tirith-front/*.tsbuildinfo
 
-app-example
+tirith-front/app-example
